@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.LanguageTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-29T10:58:45" hostname="270213fe0f11" time="0.324">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.LanguageTestCase" time="0.112"/>
+  <testcase name="test2Update" classname="com.app.server.service.LanguageTestCase" time="0.141"/>
+  <testcase name="test3FindById" classname="com.app.server.service.LanguageTestCase" time="0.004"/>
+  <testcase name="test4Delete" classname="com.app.server.service.LanguageTestCase" time="0.066"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 10:58:45.068--ClientSession(719651176)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Language_M (languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [3BA1A559-A8A6-424F-8DFC-DCC8976AE92A, LM, 54q, YQOQ, 3, vXkwlzjA7Ysh9kpklIqRtiHEJZzPjYpjAh4kvSH9n3YN10xu3n, tQu30yZN0KA1Z2IbVvSN3sLgyUT1UJHNgkUFM8Hc5HMUpYVBu3, yQsyPvNei8ySLXETwxF3PlSC5D3ktgVY17Y5SCWd3nPLhT6tLZ, g4pRtfsYG1OSsqmPOS3qvRI6Bdj7MmbT, 1, AAAAA, 2016-01-29 10:58:45.061, null, 2016-01-29 10:58:45.061, 1, 51000]
+[EL Fine]: sql: 2016-01-29 10:58:45.171--ClientSession(1035230344)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
+	bind => [1, 3BA1A559-A8A6-424F-8DFC-DCC8976AE92A]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 10:58:45.173--ClientSession(1149205677)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind => [3BA1A559-A8A6-424F-8DFC-DCC8976AE92A]
+[EL Fine]: sql: 2016-01-29 10:58:45.175--ClientSession(1149205677)--Connection(45543105)--Thread(Thread[Test worker,5,main])--UPDATE ast_Language_M SET alpha2 = ?, alpha3 = ?, alpha4 = ?, alpha4parentid = ?, language = ?, languageDescription = ?, languageIcon = ?, languageType = ?, updatedBy = ?, versionId = ? WHERE ((languageId = ?) AND (versionId = ?))
+	bind => [24, hZL, c6yN, 10, keVGnEhvjti3sWnZ6T0uYPgNMLeS90wNtoixfHwSTBtPaYeBuM, QehDxIJMydo5HhUMnRBjFwnz0LjHTh2cxs8bP2i8xitPH7w23z, DxWlwkX9389qrJcHtF0vrlsNARS74QfRuJfjZwkZXOLagKYXtC, 2ABHA5ha3i50vdtgwzHl0ZPHgPOovSpA, AAAAA, 2, 3BA1A559-A8A6-424F-8DFC-DCC8976AE92A, 1]
+[EL Fine]: sql: 2016-01-29 10:58:45.311--ClientSession(620121088)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE ((activeStatus = ?) AND (languageId = ?))
+	bind => [1, 3BA1A559-A8A6-424F-8DFC-DCC8976AE92A]
+[EL Fine]: sql: 2016-01-29 10:58:45.316--ClientSession(1119905598)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT languageId, alpha2, alpha3, alpha4, alpha4parentid, language, languageDescription, languageIcon, languageType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Language_M WHERE (languageId = ?)
+	bind => [3BA1A559-A8A6-424F-8DFC-DCC8976AE92A]
+[EL Fine]: sql: 2016-01-29 10:58:45.317--ClientSession(1119905598)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Language_M WHERE ((languageId = ?) AND (versionId = ?))
+	bind => [3BA1A559-A8A6-424F-8DFC-DCC8976AE92A, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.UserAccessDomainTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-29T10:58:44" hostname="270213fe0f11" time="0.172">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.UserAccessDomainTestCase" time="0.06"/>
+  <testcase name="test2Update" classname="com.app.server.service.UserAccessDomainTestCase" time="0.056"/>
+  <testcase name="test3FindById" classname="com.app.server.service.UserAccessDomainTestCase" time="0.005"/>
+  <testcase name="test4Delete" classname="com.app.server.service.UserAccessDomainTestCase" time="0.051"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 10:58:44.897--ClientSession(911950206)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [393190BC-B0CB-43F7-BE0D-307A9C3910A7, SplS2CsG7url3YwVi7EiObmvJzRRpKb3CvfcR3jGNV5B3UFK00, Jds4yTIBiMkNWoOTtrBBRvzHUaQJF5HdkeAMJ9j0bDAZX6q2G8, 1CDbOGOlAvjXdQKKsXO9yA3bJC0Q2YRy7a4tXAuNtVUWl5823Y, rOBzO6X203DbEmpgxT6PUvoIkdTEC9Ws9Foiz39kNdKe3A0lZz, 83141, 1, AAAAA, 2016-01-29 10:58:44.892, null, 2016-01-29 10:58:44.892, 1, 51000]
+[EL Fine]: sql: 2016-01-29 10:58:44.945--ClientSession(1076065960)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind => [1, 393190BC-B0CB-43F7-BE0D-307A9C3910A7]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 10:58:44.948--ClientSession(806910064)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind => [393190BC-B0CB-43F7-BE0D-307A9C3910A7]
+[EL Fine]: sql: 2016-01-29 10:58:44.95--ClientSession(806910064)--Connection(45543105)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessDomain_M SET domainDescription = ?, domainHelp = ?, domainIcon = ?, domainName = ?, userAccessDomain = ?, updatedBy = ?, versionId = ? WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind => [dCcAJToJ482EVyzCgVJPynFSB362bE9LPBHujEw8lDcDtYU7jy, m7GcpD2inUKwTTKQrUdKzRDz23vesjDYkykXkE8dIHqNI2PuX7, XSKndNgffaFdcNZapv9xtDzbDGEYS73M24qUQrKkdrWLzpAavr, rWfCm1NqM59YFK6VhCDrV1MXYELdop6N71Pg3qIlibZpv2Jse1, 13565, AAAAA, 2, 393190BC-B0CB-43F7-BE0D-307A9C3910A7, 1]
+[EL Fine]: sql: 2016-01-29 10:58:45.0--ClientSession(1943233040)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind => [1, 393190BC-B0CB-43F7-BE0D-307A9C3910A7]
+[EL Fine]: sql: 2016-01-29 10:58:45.005--ClientSession(1963975001)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind => [393190BC-B0CB-43F7-BE0D-307A9C3910A7]
+[EL Fine]: sql: 2016-01-29 10:58:45.006--ClientSession(1963975001)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind => [393190BC-B0CB-43F7-BE0D-307A9C3910A7, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

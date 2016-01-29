@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.CurrencyTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.CurrencyTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; CurrencyTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.466s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.221s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.056s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findBycountryId</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.180s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-01-29 10:58:39.521--ClientSession(1536631434)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [2D94761C-94BD-470F-BC34-B967B2C996BF, 8b4FkxX51wNxgbCaSoVMhMSLEvE6QZR5, 1, 4, Lbb, zVX, GT9MEDo3K04zFXzI8pSdMxaYuQ1DVmhI9Tzjxyk3QBY1KIuAML, fYKo7aNQ8HIXMvQTvu0bC1LwrjI4Z7QrN9kEI2z1B3I8DcRFMo, 7Kl, voEbHrHRfdnLx3ioVvBWBtlwuBksZXQTt4hukyUKkHCc83wiop, Bq81ggNtkEEXUZj2Sqx4ieoFU8JPdbKh, 1, 1, AAAAA, 2016-01-29 10:58:39.518, null, 2016-01-29 10:58:39.518, 1, 51000]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 10:58:39.606--ClientSession(333706957)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Currency_M (currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [AA8040F6-BBA9-48BE-9195-6200E999965A, 2D94761C-94BD-470F-BC34-B967B2C996BF, rfUBGixrv68MNgZTK1flcg5qU4yqSVhTo9OvWVNBmi9gZDAigl, 7f8Jv5oR7a4DYwitvApUTkvsM3rBg5cYdmUEDtuJcEZZX1ZraZ, zg4IWKYkeJx7IsyiOp3Z5cZCqWoqxay6bo5Qi2ICiIBVUUPf91, 1, AAAAA, 2016-01-29 10:58:39.584, null, 2016-01-29 10:58:39.584, 1, 51000]
+[EL Fine]: sql: 2016-01-29 10:58:39.733--ClientSession(633381767)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE ((activeStatus = ?) AND (currencyId = ?))
+	bind =&gt; [1, AA8040F6-BBA9-48BE-9195-6200E999965A]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 10:58:39.735--ClientSession(1870910301)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE (currencyId = ?)
+	bind =&gt; [AA8040F6-BBA9-48BE-9195-6200E999965A]
+[EL Fine]: sql: 2016-01-29 10:58:39.736--ClientSession(1870910301)--Connection(45543105)--Thread(Thread[Test worker,5,main])--UPDATE ast_Currency_M SET currencyCode = ?, unicodeDecimal = ?, unicodeHex = ?, updatedBy = ?, versionId = ? WHERE ((currencyId = ?) AND (versionId = ?))
+	bind =&gt; [JTN6ZIcoOrUEBIwFL5FIvZKhCkbqjIl5ZzMP2y563oz9axsg5Y, LSoJmp3SdLpIOOtFmwBmGlI22FTZVCd4cQazbFWPwXPfd8wXJo, FOKEY4CVoweUoOD05M3ERdZmK3Bx8rm1J18ix6Rz5k3M8IvsmG, AAAAA, 2, AA8040F6-BBA9-48BE-9195-6200E999965A, 1]
+[EL Fine]: sql: 2016-01-29 10:58:39.788--ClientSession(1206781210)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE ((activeStatus = ?) AND (currencyId = ?))
+	bind =&gt; [1, AA8040F6-BBA9-48BE-9195-6200E999965A]
+[EL Fine]: sql: 2016-01-29 10:58:39.792--ClientSession(1564446475)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind =&gt; [1, 2D94761C-94BD-470F-BC34-B967B2C996BF]
+[EL Fine]: sql: 2016-01-29 10:58:39.797--ClientSession(1229746218)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE (currencyId = ?)
+	bind =&gt; [AA8040F6-BBA9-48BE-9195-6200E999965A]
+[EL Fine]: sql: 2016-01-29 10:58:39.798--ClientSession(1229746218)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Currency_M WHERE ((currencyId = ?) AND (versionId = ?))
+	bind =&gt; [AA8040F6-BBA9-48BE-9195-6200E999965A, 2]
+[EL Fine]: sql: 2016-01-29 10:58:39.887--ClientSession(1440408579)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind =&gt; [2D94761C-94BD-470F-BC34-B967B2C996BF]
+[EL Fine]: sql: 2016-01-29 10:58:39.888--ClientSession(1440408579)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind =&gt; [2D94761C-94BD-470F-BC34-B967B2C996BF, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 29, 2016 10:58:47 AM</p>
+</div>
+</div>
+</body>
+</html>

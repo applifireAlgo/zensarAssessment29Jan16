@@ -1,0 +1,38 @@
+Ext.define('Assessmentapp.assessmentapp.shared.com.model.assessmentcontext.survey.AssessmentQuestionModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "questionId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "question",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "questionDesc",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "questionInference",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "AssessmentAnswer",
+          "reference": "AssessmentAnswerModel"
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

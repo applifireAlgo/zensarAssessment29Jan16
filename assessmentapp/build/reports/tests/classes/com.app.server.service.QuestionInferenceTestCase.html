@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.QuestionInferenceTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.QuestionInferenceTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; QuestionInferenceTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.452s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.153s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.066s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByquestionId</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.225s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-01-29 10:58:34.088--ClientSession(570352906)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AssessmentQuestion_T (questionId, question, questionDesc, questionInference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [489B3583-038D-45CA-AE90-9C515350CDD0, qUqiAOb3Zy1MZyQGZKRNrcFahUzg0Ab68g41I72RoPrxCtJOXE, A, true, 1, AAAAA, 2016-01-29 10:58:34.086, null, 2016-01-29 10:58:34.086, 1, 51000]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 10:58:34.156--ClientSession(1894317054)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_QuestionInference_T (questionInferenceId, inferenceHeading, inferenceKeyword, inferenceNoValue, inferenceYesValue, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [281745C6-918F-43F7-A678-2B870130F560, iBSWbODwUmk97imhmdOQe1VoMvqhYAS7fZkDKPQSsERwivsYTR, B, GNNMFtqPcK9hj8fe6Z0PHkeXwSg6gHKSSUaxvlreqxGYHWJ5y5, ZZYTjnYlehqo2NEqVSgkMYcwzcFVTGRkXgSLMk724pD2pR8TjV, 489B3583-038D-45CA-AE90-9C515350CDD0, 1, AAAAA, 2016-01-29 10:58:34.13, null, 2016-01-29 10:58:34.13, 1, 51000]
+[EL Fine]: sql: 2016-01-29 10:58:34.235--ClientSession(911916531)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT questionInferenceId, inferenceHeading, inferenceKeyword, inferenceNoValue, inferenceYesValue, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_QuestionInference_T WHERE ((activeStatus = ?) AND (questionInferenceId = ?))
+	bind =&gt; [1, 281745C6-918F-43F7-A678-2B870130F560]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 10:58:34.238--ClientSession(1656550541)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT questionInferenceId, inferenceHeading, inferenceKeyword, inferenceNoValue, inferenceYesValue, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_QuestionInference_T WHERE (questionInferenceId = ?)
+	bind =&gt; [281745C6-918F-43F7-A678-2B870130F560]
+[EL Fine]: sql: 2016-01-29 10:58:34.239--ClientSession(1656550541)--Connection(45543105)--Thread(Thread[Test worker,5,main])--UPDATE ast_QuestionInference_T SET inferenceHeading = ?, inferenceKeyword = ?, inferenceNoValue = ?, inferenceYesValue = ?, updatedBy = ?, versionId = ? WHERE ((questionInferenceId = ?) AND (versionId = ?))
+	bind =&gt; [ukP48ocOwXEE6FuiUTEhcjUZSHF1ZTfJiQSqN8IW6thFz5E7Is, Y, 219FbM7yp7Z7ZC9ECuUJpuQH5QuWgYLLEg1gpaXYdPK06b1uIN, lPvdWVgwvcXmgcqiMdrZtxrhGrR6hDB2vwfxuJNUyJZ9OM3eiu, AAAAA, 2, 281745C6-918F-43F7-A678-2B870130F560, 1]
+[EL Fine]: sql: 2016-01-29 10:58:34.3--ClientSession(1472933699)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT questionInferenceId, inferenceHeading, inferenceKeyword, inferenceNoValue, inferenceYesValue, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_QuestionInference_T WHERE ((activeStatus = ?) AND (questionInferenceId = ?))
+	bind =&gt; [1, 281745C6-918F-43F7-A678-2B870130F560]
+[EL Fine]: sql: 2016-01-29 10:58:34.305--ClientSession(403106976)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT questionInferenceId, inferenceHeading, inferenceKeyword, inferenceNoValue, inferenceYesValue, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_QuestionInference_T WHERE ((activeStatus = ?) AND (questionId = ?))
+	bind =&gt; [1, 489B3583-038D-45CA-AE90-9C515350CDD0]
+[EL Fine]: sql: 2016-01-29 10:58:34.309--ClientSession(1787026423)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT questionInferenceId, inferenceHeading, inferenceKeyword, inferenceNoValue, inferenceYesValue, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_QuestionInference_T WHERE (questionInferenceId = ?)
+	bind =&gt; [281745C6-918F-43F7-A678-2B870130F560]
+[EL Fine]: sql: 2016-01-29 10:58:34.311--ClientSession(1787026423)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_QuestionInference_T WHERE ((questionInferenceId = ?) AND (versionId = ?))
+	bind =&gt; [281745C6-918F-43F7-A678-2B870130F560, 2]
+[EL Fine]: sql: 2016-01-29 10:58:34.399--ClientSession(947790463)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT questionId, question, questionDesc, questionInference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AssessmentQuestion_T WHERE (questionId = ?)
+	bind =&gt; [489B3583-038D-45CA-AE90-9C515350CDD0]
+[EL Fine]: sql: 2016-01-29 10:58:34.401--ClientSession(947790463)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT t1.answerId, t1.answer, t1.answerDesc, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_QuestionAnswerBridge_B t0, ast_AssessmentAnswer_M t1 WHERE ((t0.questionId = ?) AND (t1.answerId = t0.answerId))
+	bind =&gt; [489B3583-038D-45CA-AE90-9C515350CDD0]
+[EL Fine]: sql: 2016-01-29 10:58:34.402--ClientSession(947790463)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_QuestionAnswerBridge_B WHERE (questionId = ?)
+	bind =&gt; [489B3583-038D-45CA-AE90-9C515350CDD0]
+[EL Fine]: sql: 2016-01-29 10:58:34.403--ClientSession(947790463)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AssessmentQuestion_T WHERE ((questionId = ?) AND (versionId = ?))
+	bind =&gt; [489B3583-038D-45CA-AE90-9C515350CDD0, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 29, 2016 10:58:47 AM</p>
+</div>
+</div>
+</body>
+</html>

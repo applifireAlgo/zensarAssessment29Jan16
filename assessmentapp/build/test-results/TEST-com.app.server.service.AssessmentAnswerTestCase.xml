@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.AssessmentAnswerTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-29T10:58:38" hostname="270213fe0f11" time="0.169">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.AssessmentAnswerTestCase" time="0.057"/>
+  <testcase name="test2Update" classname="com.app.server.service.AssessmentAnswerTestCase" time="0.055"/>
+  <testcase name="test3FindById" classname="com.app.server.service.AssessmentAnswerTestCase" time="0.005"/>
+  <testcase name="test4Delete" classname="com.app.server.service.AssessmentAnswerTestCase" time="0.051"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 10:58:39.01--ClientSession(1884683882)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AssessmentAnswer_M (answerId, answer, answerDesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [C061EE02-8AC1-457C-B5CB-BADCB340D5C6, QwlNi8NzlSkykJjS8mo6tANsVLkoQmizPqQ5eEXZG64PQhs3sr, A, 1, AAAAA, 2016-01-29 10:58:39.004, null, 2016-01-29 10:58:39.004, 1, 51000]
+[EL Fine]: sql: 2016-01-29 10:58:39.055--ClientSession(1015296369)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT answerId, answer, answerDesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AssessmentAnswer_M WHERE ((activeStatus = ?) AND (answerId = ?))
+	bind => [1, C061EE02-8AC1-457C-B5CB-BADCB340D5C6]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 10:58:39.057--ClientSession(813503580)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT answerId, answer, answerDesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AssessmentAnswer_M WHERE (answerId = ?)
+	bind => [C061EE02-8AC1-457C-B5CB-BADCB340D5C6]
+[EL Fine]: sql: 2016-01-29 10:58:39.059--ClientSession(813503580)--Connection(45543105)--Thread(Thread[Test worker,5,main])--UPDATE ast_AssessmentAnswer_M SET answer = ?, answerDesc = ?, updatedBy = ?, versionId = ? WHERE ((answerId = ?) AND (versionId = ?))
+	bind => [WnYEWl6tSQn4Jl6o17BB0QRnImMaJ3LpmHxSNTbmbkfhKFBgLO, X, AAAAA, 2, C061EE02-8AC1-457C-B5CB-BADCB340D5C6, 1]
+[EL Fine]: sql: 2016-01-29 10:58:39.109--ClientSession(1298898799)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT answerId, answer, answerDesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AssessmentAnswer_M WHERE ((activeStatus = ?) AND (answerId = ?))
+	bind => [1, C061EE02-8AC1-457C-B5CB-BADCB340D5C6]
+[EL Fine]: sql: 2016-01-29 10:58:39.114--ClientSession(1185217922)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT answerId, answer, answerDesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AssessmentAnswer_M WHERE (answerId = ?)
+	bind => [C061EE02-8AC1-457C-B5CB-BADCB340D5C6]
+[EL Fine]: sql: 2016-01-29 10:58:39.115--ClientSession(1185217922)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AssessmentAnswer_M WHERE ((answerId = ?) AND (versionId = ?))
+	bind => [C061EE02-8AC1-457C-B5CB-BADCB340D5C6, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

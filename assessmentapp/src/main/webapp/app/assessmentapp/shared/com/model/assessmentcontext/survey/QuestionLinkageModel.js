@@ -1,0 +1,43 @@
+Ext.define('Assessmentapp.assessmentapp.shared.com.model.assessmentcontext.survey.QuestionLinkageModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "questionLinkId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "questionid",
+          "reference": "AssessmentQuestion",
+          "defaultValue": ""
+     }, {
+          "name": "answerid",
+          "reference": "AssessmentAnswer",
+          "defaultValue": ""
+     }, {
+          "name": "linkedQuestionId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "firstGenQuestion",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "lastGenQuestion",
+          "type": "boolean",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

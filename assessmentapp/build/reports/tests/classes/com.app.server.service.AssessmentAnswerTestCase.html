@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.AssessmentAnswerTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.AssessmentAnswerTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; AssessmentAnswerTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.168s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.057s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.055s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.051s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 10:58:39.01--ClientSession(1884683882)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AssessmentAnswer_M (answerId, answer, answerDesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [C061EE02-8AC1-457C-B5CB-BADCB340D5C6, QwlNi8NzlSkykJjS8mo6tANsVLkoQmizPqQ5eEXZG64PQhs3sr, A, 1, AAAAA, 2016-01-29 10:58:39.004, null, 2016-01-29 10:58:39.004, 1, 51000]
+[EL Fine]: sql: 2016-01-29 10:58:39.055--ClientSession(1015296369)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT answerId, answer, answerDesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AssessmentAnswer_M WHERE ((activeStatus = ?) AND (answerId = ?))
+	bind =&gt; [1, C061EE02-8AC1-457C-B5CB-BADCB340D5C6]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 10:58:39.057--ClientSession(813503580)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT answerId, answer, answerDesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AssessmentAnswer_M WHERE (answerId = ?)
+	bind =&gt; [C061EE02-8AC1-457C-B5CB-BADCB340D5C6]
+[EL Fine]: sql: 2016-01-29 10:58:39.059--ClientSession(813503580)--Connection(45543105)--Thread(Thread[Test worker,5,main])--UPDATE ast_AssessmentAnswer_M SET answer = ?, answerDesc = ?, updatedBy = ?, versionId = ? WHERE ((answerId = ?) AND (versionId = ?))
+	bind =&gt; [WnYEWl6tSQn4Jl6o17BB0QRnImMaJ3LpmHxSNTbmbkfhKFBgLO, X, AAAAA, 2, C061EE02-8AC1-457C-B5CB-BADCB340D5C6, 1]
+[EL Fine]: sql: 2016-01-29 10:58:39.109--ClientSession(1298898799)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT answerId, answer, answerDesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AssessmentAnswer_M WHERE ((activeStatus = ?) AND (answerId = ?))
+	bind =&gt; [1, C061EE02-8AC1-457C-B5CB-BADCB340D5C6]
+[EL Fine]: sql: 2016-01-29 10:58:39.114--ClientSession(1185217922)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT answerId, answer, answerDesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AssessmentAnswer_M WHERE (answerId = ?)
+	bind =&gt; [C061EE02-8AC1-457C-B5CB-BADCB340D5C6]
+[EL Fine]: sql: 2016-01-29 10:58:39.115--ClientSession(1185217922)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AssessmentAnswer_M WHERE ((answerId = ?) AND (versionId = ?))
+	bind =&gt; [C061EE02-8AC1-457C-B5CB-BADCB340D5C6, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 29, 2016 10:58:47 AM</p>
+</div>
+</div>
+</body>
+</html>

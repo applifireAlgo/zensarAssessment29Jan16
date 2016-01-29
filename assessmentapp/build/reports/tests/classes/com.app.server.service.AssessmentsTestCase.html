@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.AssessmentsTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.AssessmentsTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; AssessmentsTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.474s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.187s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.127s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByfirstQuestionId</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.146s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-01-29 10:58:22.048--ClientSession(564343342)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AssessmentQuestion_T (questionId, question, questionDesc, questionInference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [BEEEDF46-B3AA-4116-B3A3-16B6670B745D, 3HJKIyhDryKczO5lfsjKJm51Hj9eNrCFXqaAfWkT0zOMbIr5Ul, Q, true, 1, AAAAA, 2016-01-29 10:58:22.045, null, 2016-01-29 10:58:22.045, 1, 51000]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 10:58:22.146--ClientSession(1214764971)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Assessments_M (assessmentId, assessmentName, duration, firstQuestionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [1F43E2BB-531C-4EA8-A9BB-8AFDFF3B39C3, &quot;rdfNRVmgvHVBtvCOQsw2gfPxbsoul0PnrD27LMpvvzTNw70EUI&quot;, 2147483647, BEEEDF46-B3AA-4116-B3A3-16B6670B745D, 1, AAAAA, 2016-01-29 10:58:22.136, null, 2016-01-29 10:58:22.136, 1, 51000]
+[EL Fine]: sql: 2016-01-29 10:58:22.232--ClientSession(2039115417)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT assessmentId, assessmentName, duration, firstQuestionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Assessments_M WHERE ((activeStatus = ?) AND (assessmentId = ?))
+	bind =&gt; [1, 1F43E2BB-531C-4EA8-A9BB-8AFDFF3B39C3]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 10:58:22.234--ClientSession(586946635)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT assessmentId, assessmentName, duration, firstQuestionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Assessments_M WHERE (assessmentId = ?)
+	bind =&gt; [1F43E2BB-531C-4EA8-A9BB-8AFDFF3B39C3]
+[EL Fine]: sql: 2016-01-29 10:58:22.236--ClientSession(586946635)--Connection(45543105)--Thread(Thread[Test worker,5,main])--UPDATE ast_Assessments_M SET assessmentName = ?, updatedBy = ?, versionId = ? WHERE ((assessmentId = ?) AND (versionId = ?))
+	bind =&gt; [ZhOcrZtwoqLzl4FokZ4IUrH7lcxnbwZUMWZNKvwQ5pqJJtetrk, AAAAA, 2, 1F43E2BB-531C-4EA8-A9BB-8AFDFF3B39C3, 1]
+[EL Fine]: sql: 2016-01-29 10:58:22.356--ClientSession(1057069587)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT assessmentId, assessmentName, duration, firstQuestionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Assessments_M WHERE ((activeStatus = ?) AND (assessmentId = ?))
+	bind =&gt; [1, 1F43E2BB-531C-4EA8-A9BB-8AFDFF3B39C3]
+[EL Fine]: sql: 2016-01-29 10:58:22.365--ClientSession(1037173325)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT assessmentId, assessmentName, duration, firstQuestionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Assessments_M WHERE ((activeStatus = ?) AND (firstQuestionId = ?))
+	bind =&gt; [1, BEEEDF46-B3AA-4116-B3A3-16B6670B745D]
+[EL Fine]: sql: 2016-01-29 10:58:22.371--ClientSession(2119862670)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT assessmentId, assessmentName, duration, firstQuestionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Assessments_M WHERE (assessmentId = ?)
+	bind =&gt; [1F43E2BB-531C-4EA8-A9BB-8AFDFF3B39C3]
+[EL Fine]: sql: 2016-01-29 10:58:22.372--ClientSession(2119862670)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Assessments_M WHERE ((assessmentId = ?) AND (versionId = ?))
+	bind =&gt; [1F43E2BB-531C-4EA8-A9BB-8AFDFF3B39C3, 2]
+[EL Fine]: sql: 2016-01-29 10:58:22.462--ClientSession(716588631)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT questionId, question, questionDesc, questionInference, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AssessmentQuestion_T WHERE (questionId = ?)
+	bind =&gt; [BEEEDF46-B3AA-4116-B3A3-16B6670B745D]
+[EL Fine]: sql: 2016-01-29 10:58:22.464--ClientSession(716588631)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT t1.answerId, t1.answer, t1.answerDesc, t1.versionId, t1.createdBy, t1.createdDate, t1.updatedBy, t1.updatedDate, t1.activeStatus, t1.txnAccessCode FROM ast_QuestionAnswerBridge_B t0, ast_AssessmentAnswer_M t1 WHERE ((t0.questionId = ?) AND (t1.answerId = t0.answerId))
+	bind =&gt; [BEEEDF46-B3AA-4116-B3A3-16B6670B745D]
+[EL Fine]: sql: 2016-01-29 10:58:22.465--ClientSession(716588631)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_QuestionAnswerBridge_B WHERE (questionId = ?)
+	bind =&gt; [BEEEDF46-B3AA-4116-B3A3-16B6670B745D]
+[EL Fine]: sql: 2016-01-29 10:58:22.466--ClientSession(716588631)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AssessmentQuestion_T WHERE ((questionId = ?) AND (versionId = ?))
+	bind =&gt; [BEEEDF46-B3AA-4116-B3A3-16B6670B745D, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 29, 2016 10:58:47 AM</p>
+</div>
+</div>
+</body>
+</html>

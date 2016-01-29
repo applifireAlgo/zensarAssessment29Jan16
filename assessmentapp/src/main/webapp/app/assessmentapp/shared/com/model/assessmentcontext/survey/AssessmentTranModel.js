@@ -1,0 +1,47 @@
+Ext.define('Assessmentapp.assessmentapp.shared.com.model.assessmentcontext.survey.AssessmentTranModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "assessmentTranId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "startTime",
+          "type": "date",
+          "defaultValue": ""
+     }, {
+          "name": "endTime",
+          "type": "date",
+          "defaultValue": ""
+     }, {
+          "name": "statusCode",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "assessmentStartsAt",
+          "type": "number",
+          "defaultValue": ""
+     }, {
+          "name": "assessmentid",
+          "reference": "Assessments",
+          "defaultValue": ""
+     }, {
+          "name": "userid",
+          "reference": "User",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

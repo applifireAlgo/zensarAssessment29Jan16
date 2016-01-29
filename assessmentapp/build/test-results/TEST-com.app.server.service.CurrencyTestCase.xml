@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.CurrencyTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-01-29T10:58:39" hostname="270213fe0f11" time="0.466">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.CurrencyTestCase" time="0.221"/>
+  <testcase name="test2Update" classname="com.app.server.service.CurrencyTestCase" time="0.056"/>
+  <testcase name="test3FindById" classname="com.app.server.service.CurrencyTestCase" time="0.004"/>
+  <testcase name="test3findBycountryId" classname="com.app.server.service.CurrencyTestCase" time="0.005"/>
+  <testcase name="test4Delete" classname="com.app.server.service.CurrencyTestCase" time="0.18"/>
+  <system-out><![CDATA[[EL Fine]: sql: 2016-01-29 10:58:39.521--ClientSession(1536631434)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [2D94761C-94BD-470F-BC34-B967B2C996BF, 8b4FkxX51wNxgbCaSoVMhMSLEvE6QZR5, 1, 4, Lbb, zVX, GT9MEDo3K04zFXzI8pSdMxaYuQ1DVmhI9Tzjxyk3QBY1KIuAML, fYKo7aNQ8HIXMvQTvu0bC1LwrjI4Z7QrN9kEI2z1B3I8DcRFMo, 7Kl, voEbHrHRfdnLx3ioVvBWBtlwuBksZXQTt4hukyUKkHCc83wiop, Bq81ggNtkEEXUZj2Sqx4ieoFU8JPdbKh, 1, 1, AAAAA, 2016-01-29 10:58:39.518, null, 2016-01-29 10:58:39.518, 1, 51000]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 10:58:39.606--ClientSession(333706957)--Connection(45543105)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Currency_M (currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [AA8040F6-BBA9-48BE-9195-6200E999965A, 2D94761C-94BD-470F-BC34-B967B2C996BF, rfUBGixrv68MNgZTK1flcg5qU4yqSVhTo9OvWVNBmi9gZDAigl, 7f8Jv5oR7a4DYwitvApUTkvsM3rBg5cYdmUEDtuJcEZZX1ZraZ, zg4IWKYkeJx7IsyiOp3Z5cZCqWoqxay6bo5Qi2ICiIBVUUPf91, 1, AAAAA, 2016-01-29 10:58:39.584, null, 2016-01-29 10:58:39.584, 1, 51000]
+[EL Fine]: sql: 2016-01-29 10:58:39.733--ClientSession(633381767)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE ((activeStatus = ?) AND (currencyId = ?))
+	bind => [1, AA8040F6-BBA9-48BE-9195-6200E999965A]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 10:58:39.735--ClientSession(1870910301)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE (currencyId = ?)
+	bind => [AA8040F6-BBA9-48BE-9195-6200E999965A]
+[EL Fine]: sql: 2016-01-29 10:58:39.736--ClientSession(1870910301)--Connection(45543105)--Thread(Thread[Test worker,5,main])--UPDATE ast_Currency_M SET currencyCode = ?, unicodeDecimal = ?, unicodeHex = ?, updatedBy = ?, versionId = ? WHERE ((currencyId = ?) AND (versionId = ?))
+	bind => [JTN6ZIcoOrUEBIwFL5FIvZKhCkbqjIl5ZzMP2y563oz9axsg5Y, LSoJmp3SdLpIOOtFmwBmGlI22FTZVCd4cQazbFWPwXPfd8wXJo, FOKEY4CVoweUoOD05M3ERdZmK3Bx8rm1J18ix6Rz5k3M8IvsmG, AAAAA, 2, AA8040F6-BBA9-48BE-9195-6200E999965A, 1]
+[EL Fine]: sql: 2016-01-29 10:58:39.788--ClientSession(1206781210)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE ((activeStatus = ?) AND (currencyId = ?))
+	bind => [1, AA8040F6-BBA9-48BE-9195-6200E999965A]
+[EL Fine]: sql: 2016-01-29 10:58:39.792--ClientSession(1564446475)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind => [1, 2D94761C-94BD-470F-BC34-B967B2C996BF]
+[EL Fine]: sql: 2016-01-29 10:58:39.797--ClientSession(1229746218)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT currencyId, countryId, currencyCode, unicodeDecimal, unicodeHex, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Currency_M WHERE (currencyId = ?)
+	bind => [AA8040F6-BBA9-48BE-9195-6200E999965A]
+[EL Fine]: sql: 2016-01-29 10:58:39.798--ClientSession(1229746218)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Currency_M WHERE ((currencyId = ?) AND (versionId = ?))
+	bind => [AA8040F6-BBA9-48BE-9195-6200E999965A, 2]
+[EL Fine]: sql: 2016-01-29 10:58:39.887--ClientSession(1440408579)--Connection(45543105)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind => [2D94761C-94BD-470F-BC34-B967B2C996BF]
+[EL Fine]: sql: 2016-01-29 10:58:39.888--ClientSession(1440408579)--Connection(45543105)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind => [2D94761C-94BD-470F-BC34-B967B2C996BF, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
